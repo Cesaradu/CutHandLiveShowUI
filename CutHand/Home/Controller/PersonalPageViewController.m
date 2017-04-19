@@ -133,14 +133,14 @@
 }
 
 - (UIScrollView *)buildScrollView2 {
-    self.scrollView2 = [[UIScrollView alloc] initWithFrame:CGRectMake(0, [self Suit:(140+306+20+120+20)/2], ScreenWidth, ScreenHeight-[self Suit:(140+20+120+20)/2])];
+    self.scrollView2 = [[UIScrollView alloc] initWithFrame:CGRectMake(0, [self Suit:(140+306+20+120+20)/2], ScreenWidth, ScreenHeight-[self Suit:(20+120+20)/2]-64)];
     self.scrollView2.delegate = self;
     self.scrollView2.pagingEnabled = YES;
     self.scrollView2.showsHorizontalScrollIndicator = NO;
     self.scrollView2.backgroundColor = [UIColor colorWithHexString:BGColor alpha:1.0];
     self.scrollView2.contentSize = CGSizeMake(ScreenWidth*2, ScreenHeight-[self Suit:(140+306+20+120+20)/2]);
     
-    self.recordTableView = [[UITableView alloc] initWithFrame:CGRectMake([self Suit:15], 0, ScreenWidth-[self Suit:30], ScreenHeight-[self Suit:(140+20+120+20)/2]) style:UITableViewStyleGrouped];
+    self.recordTableView = [[UITableView alloc] initWithFrame:CGRectMake([self Suit:15], 0, ScreenWidth-[self Suit:30], ScreenHeight-[self Suit:(20+120+20)/2]-64) style:UITableViewStyleGrouped];
     self.recordTableView.backgroundColor = [UIColor colorWithHexString:BGColor alpha:1.0];
     self.recordTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.recordTableView.delegate = self;
@@ -148,13 +148,19 @@
     self.recordTableView.showsVerticalScrollIndicator = NO;
     [self.scrollView2 addSubview:self.recordTableView];
     
-    self.infoTableView = [[UITableView alloc] initWithFrame:CGRectMake(ScreenWidth+[self Suit:15], 0, ScreenWidth-[self Suit:30], [self Suit:594/2])];
+    self.infoTableView = [[UITableView alloc] initWithFrame:CGRectMake(ScreenWidth+[self Suit:15], 0, ScreenWidth-[self Suit:30], [self Suit:616/2])];
     self.infoTableView.backgroundColor = [UIColor colorWithHexString:BGColor alpha:1.0];
     self.infoTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.infoTableView.delegate = self;
     self.infoTableView.dataSource = self;
     self.infoTableView.showsVerticalScrollIndicator = NO;
     self.infoTableView.layer.cornerRadius = [self Suit:5];
+    self.infoTableView.layer.masksToBounds = YES;
+//    self.infoTableView.layer.shadowColor = [UIColor colorWithHexString:@"c2c2c2" alpha:1.0].CGColor;
+//    self.infoTableView.layer.shadowOffset = CGSizeMake(2, 2);
+//    self.infoTableView.layer.shadowOpacity = 0.6;
+//    self.infoTableView.layer.shadowRadius = 2;
+//    self.infoTableView.clipsToBounds = NO;
     self.infoTableView.scrollEnabled = NO;
     [self.scrollView2 addSubview:self.infoTableView];
     
@@ -162,7 +168,7 @@
 }
 
 - (UIView *)buildHeadView {
-    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake([self Suit:15], [self Suit:140/2], ScreenWidth-[self Suit:30], [self Suit:306/2])];
+    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake([self Suit:15], [self Suit:70], ScreenWidth-[self Suit:30], [self Suit:306/2])];
     headView.backgroundColor = [UIColor whiteColor];
     headView.layer.cornerRadius = [self Suit:5];
     headView.layer.shadowColor = [UIColor colorWithHexString:@"c2c2c2" alpha:1.0].CGColor;
@@ -293,7 +299,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (tableView == self.recordTableView) {
-        return 10;
+        return 0;
     }
     return 1;
 }
@@ -309,7 +315,7 @@
     if (tableView == self.recordTableView) {
         return [self Suit:858/2];
     }
-    return [self Suit:594/2/7];
+    return [self Suit:616/2/7];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -355,20 +361,20 @@
         CGFloat scrollViewOffsetY = scrollView.contentOffset.y;
         if (scrollViewOffsetY > 0)
         {
-            [UIView animateWithDuration:0.4 animations:^{
-                [self.navigationController setNavigationBarHidden:NO];
+            [UIView animateWithDuration:0.3 animations:^{
                 self.headView.alpha = 0.0f;
-                [self.scrollView setContentOffset:CGPointMake(0, [self Suit:306/2]+64)];
+                [self.scrollView setContentOffset:CGPointMake(0, [self Suit:306/2+70])];
             } completion:^(BOOL finished) {
+                [self.navigationController setNavigationBarHidden:NO animated:YES];
             }];
         }
         else
         {
-            [UIView animateWithDuration:0.4 animations:^{
+            [UIView animateWithDuration:0.3 animations:^{
                 self.headView.alpha = 1.0f;
                 [self.scrollView setContentOffset:CGPointMake(0, 0)];
             } completion:^(BOOL finished) {
-                [self.navigationController setNavigationBarHidden:YES];
+                [self.navigationController setNavigationBarHidden:YES animated:YES];
             }];
         }
     }

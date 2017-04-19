@@ -11,7 +11,7 @@
 #import "AnimationButton.h"
 #import "PersonalPageViewController.h"
 
-@interface RankingListViewController () <UITableViewDelegate, UITableViewDataSource, AnimationButtonDelegate>
+@interface RankingListViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIView *naviView;
 @property (nonatomic, strong) UIImageView *lineView;//导航栏黑线
 @property (nonatomic, strong) UITableView *tableView;
@@ -159,13 +159,15 @@
         make.top.equalTo(self.nameLabel.mas_bottom).offset([self Suit:5]);
     }];
     
-//    self.focusBtn = [AnimationButton buttonWithFrame:CGRectMake(ScreenWidth/2-[self Suit:35], [self Suit:260], [self Suit:70], [self Suit:30])];
-//    self.focusBtn.delegate = self;
-//    [self.focusBtn setborderColor:[UIColor whiteColor]];
-//    [self.focusBtn setborderWidth:1.0];
-//    [self.focusBtn setTitle:@"+" forState:UIControlStateNormal];
-//    [self.focusBtn setTitleColor:[UIColor colorWithHexString:@"ffffff" alpha:1.0] forState:UIControlStateNormal];
-//    self.focusBtn.backgroundColor = [UIColor clearColor];
+//    self.focusBtn = [[AnimationButton alloc] initWithFrame:CGRectMake(ScreenWidth/2-[self Suit:35], [self Suit:260], [self Suit:70], [self Suit:30])];
+//    self.focusBtn.selected = YES;
+//    self.focusBtn.contentColor = [UIColor colorWithHexString:@"32B796" alpha:1.0];
+//    self.focusBtn.progressColor = [UIColor whiteColor];
+//    [self.focusBtn.displayButton setImage:[UIImage imageNamed:@"unfollow"] forState:UIControlStateNormal];
+//    [self.focusBtn addTarget:self action:@selector(clickFocusBtn) forControlEvents:UIControlEventTouchUpInside];
+//    [headView addSubview:self.focusBtn];
+    
+    
     self.focusBtn = [[UIButton alloc] init];
     self.focusBtn.selected = YES;
     [self.focusBtn setImage:[UIImage imageNamed:@"unfollow"] forState:UIControlStateNormal];
@@ -320,10 +322,18 @@
 }
 
 - (void)clickFocusBtn {
-    //[self.focusBtn startAnimation];
+//    [self.focusBtn startAnimation];
+//    [self performSelector:@selector(stopAnimation) withObject:nil afterDelay:2];
     self.focusBtn.selected = !self.focusBtn.selected;
     [self.focusBtn setImage:[UIImage imageNamed:self.focusBtn.selected ? @"unfollow" : @"followed"] forState:UIControlStateNormal];
+
 }
+
+//- (void)stopAnimation {
+//    self.focusBtn.selected = !self.focusBtn.selected;
+//    [self.focusBtn.displayButton setImage:[UIImage imageNamed:self.focusBtn.selected ? @"unfollow" : @"followed"] forState:UIControlStateNormal];
+//    [self.focusBtn stopAnimation];
+//}
 
 #pragma mark - UIScrollViewDelegate
 
@@ -335,23 +345,6 @@
         }
     }
 }
-
-//#pragma mark - AnimationBtnDelegate
-//
-//-(void)AnimationButtonDidStartAnimation:(AnimationButton *)AnimationButton{
-//    NSLog(@"start");
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [AnimationButton stopAnimation];
-//    });
-//}
-//
-//-(void)AnimationButtonDidFinishAnimation:(AnimationButton *)AnimationButton{
-//    NSLog(@"stop");
-//}
-//
-//-(void)AnimationButtonWillFinishAnimation:(AnimationButton *)AnimationButton {
-//    [self.focusBtn setTitle:@"√" forState:UIControlStateNormal];
-//}
 
 //找到导航栏最下面黑线视图
 - (UIImageView *)getLineViewInNavigationBar:(UIView *)view

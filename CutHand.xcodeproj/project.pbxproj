@@ -45,8 +45,6 @@
 		382DAE241E9F74C500202F66 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DAE231E9F74C500202F66 /* HomeTableViewCell.m */; };
 		382DAE271E9F7AE100202F66 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DAE261E9F7AE100202F66 /* MineTableViewCell.m */; };
 		384121381EA4AFE500FB31B5 /* PersonalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121371EA4AFE500FB31B5 /* PersonalPageViewController.m */; };
-		3841213E1EA4B0B300FB31B5 /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3841213B1EA4B0B300FB31B5 /* AnimationButton.m */; };
-		3841213F1EA4B0B300FB31B5 /* CircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3841213D1EA4B0B300FB31B5 /* CircleAnimationView.m */; };
 		384121451EA4B0BA00FB31B5 /* ADScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121421EA4B0BA00FB31B5 /* ADScrollContentView.m */; };
 		384121461EA4B0BA00FB31B5 /* ADScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121441EA4B0BA00FB31B5 /* ADScrollTitleView.m */; };
 		38AE5D911EA068E900D7F558 /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D901EA068E900D7F558 /* UIView+Draggable.m */; };
@@ -54,6 +52,8 @@
 		38AE5D971EA07DA800D7F558 /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D961EA07DA800D7F558 /* RankingListViewController.m */; };
 		38AE5D9A1EA0C3F800D7F558 /* RecommandCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D991EA0C3F800D7F558 /* RecommandCollectionViewCell.m */; };
 		38AE5D9D1EA0C7D400D7F558 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D9C1EA0C7D400D7F558 /* CategoryTableViewCell.m */; };
+		38B806561EA7047700CD9E20 /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B806551EA7047700CD9E20 /* AnimationButton.m */; };
+		38B8065A1EA7050F00CD9E20 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */; };
 		38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1D7FD1EA5AC9600C16F3C /* RecordTableViewCell.m */; };
 		4BDDE589F5896DBB16885230 /* libPods-CutHand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01AB644265261E964507C41 /* libPods-CutHand.a */; };
 /* End PBXBuildFile section */
@@ -134,10 +134,6 @@
 		382DAE261E9F7AE100202F66 /* MineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		384121361EA4AFE500FB31B5 /* PersonalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPageViewController.h; sourceTree = "<group>"; };
 		384121371EA4AFE500FB31B5 /* PersonalPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPageViewController.m; sourceTree = "<group>"; };
-		3841213A1EA4B0B300FB31B5 /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
-		3841213B1EA4B0B300FB31B5 /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
-		3841213C1EA4B0B300FB31B5 /* CircleAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAnimationView.h; sourceTree = "<group>"; };
-		3841213D1EA4B0B300FB31B5 /* CircleAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleAnimationView.m; sourceTree = "<group>"; };
 		384121411EA4B0BA00FB31B5 /* ADScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScrollContentView.h; sourceTree = "<group>"; };
 		384121421EA4B0BA00FB31B5 /* ADScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScrollContentView.m; sourceTree = "<group>"; };
 		384121431EA4B0BA00FB31B5 /* ADScrollTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScrollTitleView.h; sourceTree = "<group>"; };
@@ -152,6 +148,10 @@
 		38AE5D991EA0C3F800D7F558 /* RecommandCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandCollectionViewCell.m; sourceTree = "<group>"; };
 		38AE5D9B1EA0C7D400D7F558 /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewCell.h; sourceTree = "<group>"; };
 		38AE5D9C1EA0C7D400D7F558 /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewCell.m; sourceTree = "<group>"; };
+		38B806541EA7047700CD9E20 /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
+		38B806551EA7047700CD9E20 /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
+		38B806581EA7050F00CD9E20 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		38F1D7FC1EA5AC9600C16F3C /* RecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableViewCell.h; sourceTree = "<group>"; };
 		38F1D7FD1EA5AC9600C16F3C /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
 		86E831D2196ABDA6934F54A3 /* Pods-CutHand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CutHand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CutHand/Pods-CutHand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -590,10 +590,9 @@
 		384121391EA4B0B300FB31B5 /* AnimationButton */ = {
 			isa = PBXGroup;
 			children = (
-				3841213A1EA4B0B300FB31B5 /* AnimationButton.h */,
-				3841213B1EA4B0B300FB31B5 /* AnimationButton.m */,
-				3841213C1EA4B0B300FB31B5 /* CircleAnimationView.h */,
-				3841213D1EA4B0B300FB31B5 /* CircleAnimationView.m */,
+				38B806571EA7050F00CD9E20 /* MMMaterialDesignSpinner */,
+				38B806541EA7047700CD9E20 /* AnimationButton.h */,
+				38B806551EA7047700CD9E20 /* AnimationButton.m */,
 			);
 			path = AnimationButton;
 			sourceTree = "<group>";
@@ -616,6 +615,15 @@
 				38AE5D901EA068E900D7F558 /* UIView+Draggable.m */,
 			);
 			path = UIViewHelper;
+			sourceTree = "<group>";
+		};
+		38B806571EA7050F00CD9E20 /* MMMaterialDesignSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				38B806581EA7050F00CD9E20 /* MMMaterialDesignSpinner.h */,
+				38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */,
+			);
+			path = MMMaterialDesignSpinner;
 			sourceTree = "<group>";
 		};
 		6C7914265C13546247FB87FE /* Frameworks */ = {
@@ -761,7 +769,6 @@
 			files = (
 				382DAE021E9F1B5600202F66 /* MBProgressHUD+Help.m in Sources */,
 				38AE5D911EA068E900D7F558 /* UIView+Draggable.m in Sources */,
-				3841213F1EA4B0B300FB31B5 /* CircleAnimationView.m in Sources */,
 				382DADEB1E9F1B2F00202F66 /* UUID.m in Sources */,
 				382DAD9B1E9F164500202F66 /* AppDelegate.m in Sources */,
 				382DAE051E9F1B5600202F66 /* UIButton+Extension.m in Sources */,
@@ -778,8 +785,9 @@
 				382DAE031E9F1B5600202F66 /* NSString+MD5.m in Sources */,
 				382DADC51E9F1B2000202F66 /* TADotView.m in Sources */,
 				382DAE241E9F74C500202F66 /* HomeTableViewCell.m in Sources */,
+				38B8065A1EA7050F00CD9E20 /* MMMaterialDesignSpinner.m in Sources */,
 				382DAE101E9F1E3B00202F66 /* MineViewController.m in Sources */,
-				3841213E1EA4B0B300FB31B5 /* AnimationButton.m in Sources */,
+				38B806561EA7047700CD9E20 /* AnimationButton.m in Sources */,
 				384121461EA4B0BA00FB31B5 /* ADScrollTitleView.m in Sources */,
 				382DADC31E9F1B2000202F66 /* TAAbstractDotView.m in Sources */,
 				382DADC41E9F1B2000202F66 /* TAAnimatedDotView.m in Sources */,
