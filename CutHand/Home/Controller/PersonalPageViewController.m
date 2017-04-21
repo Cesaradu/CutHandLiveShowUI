@@ -299,7 +299,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (tableView == self.recordTableView) {
-        return 0;
+        return 10;
     }
     return 1;
 }
