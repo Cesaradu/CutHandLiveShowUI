@@ -4,4 +4,4 @@
 
 效果图
 
-![image]()
+![image](https://github.com/Cesaradu/CutHandLiveShowUI/blob/master/cutHand.gif)
