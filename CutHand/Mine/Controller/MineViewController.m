@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 #import "MineTableViewCell.h"
 #import "UIView+Draggable.h"
+#import "EditViewController.h"
 
 @interface MineViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -221,7 +222,10 @@
 }
 
 - (void)clickEditBtn {
-    
+    EditViewController *editVC = [[EditViewController alloc] init];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:editVC animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 - (void)didReceiveMemoryWarning {

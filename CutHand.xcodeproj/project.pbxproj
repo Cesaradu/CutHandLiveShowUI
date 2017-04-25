@@ -47,6 +47,9 @@
 		384121381EA4AFE500FB31B5 /* PersonalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121371EA4AFE500FB31B5 /* PersonalPageViewController.m */; };
 		384121451EA4B0BA00FB31B5 /* ADScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121421EA4B0BA00FB31B5 /* ADScrollContentView.m */; };
 		384121461EA4B0BA00FB31B5 /* ADScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121441EA4B0BA00FB31B5 /* ADScrollTitleView.m */; };
+		386880081EAF24830006F87C /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386880071EAF24830006F87C /* EditViewController.m */; };
+		3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800A1EAF2BD90006F87C /* EditTableViewCell.m */; };
+		3868800E1EAF34050006F87C /* GenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800D1EAF34050006F87C /* GenderViewController.m */; };
 		38AE5D911EA068E900D7F558 /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D901EA068E900D7F558 /* UIView+Draggable.m */; };
 		38AE5D941EA07D7900D7F558 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D931EA07D7900D7F558 /* SearchViewController.m */; };
 		38AE5D971EA07DA800D7F558 /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D961EA07DA800D7F558 /* RankingListViewController.m */; };
@@ -138,6 +141,12 @@
 		384121421EA4B0BA00FB31B5 /* ADScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScrollContentView.m; sourceTree = "<group>"; };
 		384121431EA4B0BA00FB31B5 /* ADScrollTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScrollTitleView.h; sourceTree = "<group>"; };
 		384121441EA4B0BA00FB31B5 /* ADScrollTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScrollTitleView.m; sourceTree = "<group>"; };
+		386880061EAF24830006F87C /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		386880071EAF24830006F87C /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		386880091EAF2BD90006F87C /* EditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableViewCell.h; sourceTree = "<group>"; };
+		3868800A1EAF2BD90006F87C /* EditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableViewCell.m; sourceTree = "<group>"; };
+		3868800C1EAF34050006F87C /* GenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderViewController.h; sourceTree = "<group>"; };
+		3868800D1EAF34050006F87C /* GenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderViewController.m; sourceTree = "<group>"; };
 		38AE5D8F1EA068E900D7F558 /* UIView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Draggable.h"; sourceTree = "<group>"; };
 		38AE5D901EA068E900D7F558 /* UIView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draggable.m"; sourceTree = "<group>"; };
 		38AE5D921EA07D7900D7F558 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -347,6 +356,10 @@
 			children = (
 				382DAE0E1E9F1E3B00202F66 /* MineViewController.h */,
 				382DAE0F1E9F1E3B00202F66 /* MineViewController.m */,
+				386880061EAF24830006F87C /* EditViewController.h */,
+				386880071EAF24830006F87C /* EditViewController.m */,
+				3868800C1EAF34050006F87C /* GenderViewController.h */,
+				3868800D1EAF34050006F87C /* GenderViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,6 +376,8 @@
 			children = (
 				382DAE251E9F7AE100202F66 /* MineTableViewCell.h */,
 				382DAE261E9F7AE100202F66 /* MineTableViewCell.m */,
+				386880091EAF2BD90006F87C /* EditTableViewCell.h */,
+				3868800A1EAF2BD90006F87C /* EditTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -774,6 +789,7 @@
 				382DAE051E9F1B5600202F66 /* UIButton+Extension.m in Sources */,
 				382DAE211E9F563800202F66 /* HomeTableViewController.m in Sources */,
 				384121381EA4AFE500FB31B5 /* PersonalPageViewController.m in Sources */,
+				3868800E1EAF34050006F87C /* GenderViewController.m in Sources */,
 				382DAE181E9F2BDF00202F66 /* LiveViewController.m in Sources */,
 				384121451EA4B0BA00FB31B5 /* ADScrollContentView.m in Sources */,
 				382DADE81E9F1B2F00202F66 /* KeyChain.m in Sources */,
@@ -786,6 +802,7 @@
 				382DADC51E9F1B2000202F66 /* TADotView.m in Sources */,
 				382DAE241E9F74C500202F66 /* HomeTableViewCell.m in Sources */,
 				38B8065A1EA7050F00CD9E20 /* MMMaterialDesignSpinner.m in Sources */,
+				386880081EAF24830006F87C /* EditViewController.m in Sources */,
 				382DAE101E9F1E3B00202F66 /* MineViewController.m in Sources */,
 				38B806561EA7047700CD9E20 /* AnimationButton.m in Sources */,
 				384121461EA4B0BA00FB31B5 /* ADScrollTitleView.m in Sources */,
@@ -795,6 +812,7 @@
 				382DADE51E9F1B2F00202F66 /* NSMutableArray+MutableArrayCheck.m in Sources */,
 				382DADC91E9F1B2000202F66 /* UIView+SDExtension.m in Sources */,
 				38AE5D941EA07D7900D7F558 /* SearchViewController.m in Sources */,
+				3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */,
 				382DADA61E9F170900202F66 /* BaseViewController.m in Sources */,
 				382DAE151E9F29E500202F66 /* ADTabBar.m in Sources */,
 				38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */,
