@@ -26,7 +26,6 @@
 }
 
 - (void)setupInit {
-    [self buildNaviBarLelfBtn];
     self.titleArray = @[@"头像", @"昵称", @"性别", @"年龄", @"所在地", @"个性签名"];
     self.view.backgroundColor = [UIColor colorWithHexString:BGColor alpha:1.0];
     self.title = @"编辑个人资料";

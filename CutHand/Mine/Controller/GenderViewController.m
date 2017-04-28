@@ -25,7 +25,6 @@
 }
 
 - (void)setupInit {
-    [self buildNaviBarLelfBtn];
     self.view.backgroundColor = [UIColor colorWithHexString:BGColor alpha:1.0];
     self.title = @"性别";
 }

@@ -10,6 +10,7 @@
 #import "MineTableViewCell.h"
 #import "UIView+Draggable.h"
 #import "EditViewController.h"
+#import "AnchorLevelViewController.h"
 
 @interface MineViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -209,6 +210,62 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return (ScreenHeight-64-49-[self Suit:210])/8;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0:
+        {
+            
+        }
+            break;
+          
+        case 1:
+        {
+            
+        }
+            break;
+            
+        case 2:
+        {
+            
+        }
+            break;
+            
+        case 3:
+        {
+            
+        }
+            break;
+            
+        case 4:
+        {
+            
+        }
+            break;
+            
+        case 5:
+        {
+            
+        }
+            break;
+            
+        case 6:
+        {
+            AnchorLevelViewController *anchorVC = [[AnchorLevelViewController alloc] init];
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:anchorVC animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+            break;
+            
+        case 7:
+        {
+            
+        }
+            break;
+        
+    }
 }
 
 #pragma mark - Actions

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3817554E1EB30EEB0085D2CA /* LevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3817554D1EB30EEB0085D2CA /* LevelView.m */; };
+		381755511EB315F00085D2CA /* LevelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 381755501EB315F00085D2CA /* LevelCell.m */; };
 		382AC9EB1EA46CDD00378AB7 /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382AC9EA1EA46CDD00378AB7 /* RankTableViewCell.m */; };
 		382DAD841E9F15B900202F66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DAD831E9F15B900202F66 /* main.m */; };
 		382DAD9B1E9F164500202F66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DAD971E9F164500202F66 /* AppDelegate.m */; };
@@ -50,6 +52,10 @@
 		386880081EAF24830006F87C /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386880071EAF24830006F87C /* EditViewController.m */; };
 		3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800A1EAF2BD90006F87C /* EditTableViewCell.m */; };
 		3868800E1EAF34050006F87C /* GenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800D1EAF34050006F87C /* GenderViewController.m */; };
+		386F9F4A1EB071F300FCD950 /* AnchorLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F491EB071F300FCD950 /* AnchorLevelViewController.m */; };
+		386F9F541EB07B8400FCD950 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F531EB07B8400FCD950 /* BaseTableCell.m */; };
+		386F9F571EB07B9900FCD950 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F561EB07B9900FCD950 /* BaseCollectionCell.m */; };
+		386F9F611EB0A0CD00FCD950 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F601EB0A0CD00FCD950 /* iCarousel.m */; };
 		38AE5D911EA068E900D7F558 /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D901EA068E900D7F558 /* UIView+Draggable.m */; };
 		38AE5D941EA07D7900D7F558 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D931EA07D7900D7F558 /* SearchViewController.m */; };
 		38AE5D971EA07DA800D7F558 /* RankingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D961EA07DA800D7F558 /* RankingListViewController.m */; };
@@ -63,6 +69,10 @@
 
 /* Begin PBXFileReference section */
 		381631AA1E9E2EBB00269781 /* CutHand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutHand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3817554C1EB30EEB0085D2CA /* LevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelView.h; sourceTree = "<group>"; };
+		3817554D1EB30EEB0085D2CA /* LevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelView.m; sourceTree = "<group>"; };
+		3817554F1EB315F00085D2CA /* LevelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelCell.h; sourceTree = "<group>"; };
+		381755501EB315F00085D2CA /* LevelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelCell.m; sourceTree = "<group>"; };
 		382AC9E91EA46CDD00378AB7 /* RankTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankTableViewCell.h; sourceTree = "<group>"; };
 		382AC9EA1EA46CDD00378AB7 /* RankTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankTableViewCell.m; sourceTree = "<group>"; };
 		382DAD831E9F15B900202F66 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +157,14 @@
 		3868800A1EAF2BD90006F87C /* EditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableViewCell.m; sourceTree = "<group>"; };
 		3868800C1EAF34050006F87C /* GenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderViewController.h; sourceTree = "<group>"; };
 		3868800D1EAF34050006F87C /* GenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderViewController.m; sourceTree = "<group>"; };
+		386F9F481EB071F300FCD950 /* AnchorLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorLevelViewController.h; sourceTree = "<group>"; };
+		386F9F491EB071F300FCD950 /* AnchorLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnchorLevelViewController.m; sourceTree = "<group>"; };
+		386F9F521EB07B8400FCD950 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
+		386F9F531EB07B8400FCD950 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
+		386F9F551EB07B9900FCD950 /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
+		386F9F561EB07B9900FCD950 /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
+		386F9F5F1EB0A0CD00FCD950 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		386F9F601EB0A0CD00FCD950 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		38AE5D8F1EA068E900D7F558 /* UIView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Draggable.h"; sourceTree = "<group>"; };
 		38AE5D901EA068E900D7F558 /* UIView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draggable.m"; sourceTree = "<group>"; };
 		38AE5D921EA07D7900D7F558 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -360,6 +378,8 @@
 				386880071EAF24830006F87C /* EditViewController.m */,
 				3868800C1EAF34050006F87C /* GenderViewController.h */,
 				3868800D1EAF34050006F87C /* GenderViewController.m */,
+				386F9F481EB071F300FCD950 /* AnchorLevelViewController.h */,
+				386F9F491EB071F300FCD950 /* AnchorLevelViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,6 +398,10 @@
 				382DAE261E9F7AE100202F66 /* MineTableViewCell.m */,
 				386880091EAF2BD90006F87C /* EditTableViewCell.h */,
 				3868800A1EAF2BD90006F87C /* EditTableViewCell.m */,
+				3817554C1EB30EEB0085D2CA /* LevelView.h */,
+				3817554D1EB30EEB0085D2CA /* LevelView.m */,
+				3817554F1EB315F00085D2CA /* LevelCell.h */,
+				381755501EB315F00085D2CA /* LevelCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +445,7 @@
 		382DADAD1E9F1B0100202F66 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				386F9F5E1EB0A0C700FCD950 /* iCarousel */,
 				382DADB01E9F1B2000202F66 /* SDCycleScrollView */,
 				382DADC01E9F1B2000202F66 /* WToast */,
 			);
@@ -445,6 +470,7 @@
 		382DADAF1E9F1B0100202F66 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				386F9F511EB07B6800FCD950 /* BaseCell */,
 				382DADCB1E9F1B2F00202F66 /* ArrayCheck */,
 				382DADD51E9F1B2F00202F66 /* KeyChain */,
 				382DADD81E9F1B2F00202F66 /* ModelData */,
@@ -623,6 +649,26 @@
 			path = ADScrollView;
 			sourceTree = "<group>";
 		};
+		386F9F511EB07B6800FCD950 /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				386F9F521EB07B8400FCD950 /* BaseTableCell.h */,
+				386F9F531EB07B8400FCD950 /* BaseTableCell.m */,
+				386F9F551EB07B9900FCD950 /* BaseCollectionCell.h */,
+				386F9F561EB07B9900FCD950 /* BaseCollectionCell.m */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		386F9F5E1EB0A0C700FCD950 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				386F9F5F1EB0A0CD00FCD950 /* iCarousel.h */,
+				386F9F601EB0A0CD00FCD950 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
 		38AE5D8D1EA068AF00D7F558 /* UIViewHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,10 +836,13 @@
 				382DAE211E9F563800202F66 /* HomeTableViewController.m in Sources */,
 				384121381EA4AFE500FB31B5 /* PersonalPageViewController.m in Sources */,
 				3868800E1EAF34050006F87C /* GenderViewController.m in Sources */,
+				386F9F4A1EB071F300FCD950 /* AnchorLevelViewController.m in Sources */,
+				3817554E1EB30EEB0085D2CA /* LevelView.m in Sources */,
 				382DAE181E9F2BDF00202F66 /* LiveViewController.m in Sources */,
 				384121451EA4B0BA00FB31B5 /* ADScrollContentView.m in Sources */,
 				382DADE81E9F1B2F00202F66 /* KeyChain.m in Sources */,
 				382DAE041E9F1B5600202F66 /* NSString+Extension.m in Sources */,
+				386F9F571EB07B9900FCD950 /* BaseCollectionCell.m in Sources */,
 				382DAE061E9F1B5600202F66 /* UIColor+ColorHelper.m in Sources */,
 				382DAE081E9F1B5600202F66 /* UILabel+Extension.m in Sources */,
 				382DADCA1E9F1B2000202F66 /* WToast.m in Sources */,
@@ -810,14 +859,17 @@
 				382DADC41E9F1B2000202F66 /* TAAnimatedDotView.m in Sources */,
 				38AE5D9D1EA0C7D400D7F558 /* CategoryTableViewCell.m in Sources */,
 				382DADE51E9F1B2F00202F66 /* NSMutableArray+MutableArrayCheck.m in Sources */,
+				386F9F611EB0A0CD00FCD950 /* iCarousel.m in Sources */,
 				382DADC91E9F1B2000202F66 /* UIView+SDExtension.m in Sources */,
 				38AE5D941EA07D7900D7F558 /* SearchViewController.m in Sources */,
 				3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */,
+				386F9F541EB07B8400FCD950 /* BaseTableCell.m in Sources */,
 				382DADA61E9F170900202F66 /* BaseViewController.m in Sources */,
 				382DAE151E9F29E500202F66 /* ADTabBar.m in Sources */,
 				38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */,
 				382DADC61E9F1B2000202F66 /* TAPageControl.m in Sources */,
 				38AE5D971EA07DA800D7F558 /* RankingListViewController.m in Sources */,
+				381755511EB315F00085D2CA /* LevelCell.m in Sources */,
 				382DADA91E9F172600202F66 /* MainTabBarController.m in Sources */,
 				382DADEA1E9F1B2F00202F66 /* BaseRequest.m in Sources */,
 				382DAD841E9F15B900202F66 /* main.m in Sources */,

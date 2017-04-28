@@ -10,13 +10,48 @@
 
 @interface BaseViewController ()
 
+@property (nonatomic, strong) UIImageView *lineView;//导航栏黑线
+
 @end
 
 @implementation BaseViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.lineView.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.lineView.hidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //获取导航栏下面黑线
+    self.lineView = [self getLineViewInNavigationBar:self.navigationController.navigationBar];
+    
+    if(self.navigationController.viewControllers.count>1) {
+        [self buildNaviBarLelfBtn];
+    }
+}
+
+//找到导航栏最下面黑线视图
+- (UIImageView *)getLineViewInNavigationBar:(UIView *)view
+{
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self getLineViewInNavigationBar:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
 }
 
 /**
