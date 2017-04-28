@@ -64,6 +64,7 @@
 		38B806561EA7047700CD9E20 /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B806551EA7047700CD9E20 /* AnimationButton.m */; };
 		38B8065A1EA7050F00CD9E20 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */; };
 		38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1D7FD1EA5AC9600C16F3C /* RecordTableViewCell.m */; };
+		38F3D7D41EB3309A00C40DAF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F3D7D31EB3309A00C40DAF /* LoginViewController.m */; };
 		4BDDE589F5896DBB16885230 /* libPods-CutHand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01AB644265261E964507C41 /* libPods-CutHand.a */; };
 /* End PBXBuildFile section */
 
@@ -181,6 +182,8 @@
 		38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		38F1D7FC1EA5AC9600C16F3C /* RecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableViewCell.h; sourceTree = "<group>"; };
 		38F1D7FD1EA5AC9600C16F3C /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
+		38F3D7D21EB3309A00C40DAF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		38F3D7D31EB3309A00C40DAF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		86E831D2196ABDA6934F54A3 /* Pods-CutHand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CutHand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CutHand/Pods-CutHand.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB90C3E78E52A1393B5318B /* Pods-CutHand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CutHand.release.xcconfig"; path = "Pods/Target Support Files/Pods-CutHand/Pods-CutHand.release.xcconfig"; sourceTree = "<group>"; };
 		F01AB644265261E964507C41 /* libPods-CutHand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CutHand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -341,6 +344,8 @@
 		382DAD7B1E9F152A00202F66 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				38F3D7D21EB3309A00C40DAF /* LoginViewController.h */,
+				38F3D7D31EB3309A00C40DAF /* LoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -860,6 +865,7 @@
 				38AE5D9D1EA0C7D400D7F558 /* CategoryTableViewCell.m in Sources */,
 				382DADE51E9F1B2F00202F66 /* NSMutableArray+MutableArrayCheck.m in Sources */,
 				386F9F611EB0A0CD00FCD950 /* iCarousel.m in Sources */,
+				38F3D7D41EB3309A00C40DAF /* LoginViewController.m in Sources */,
 				382DADC91E9F1B2000202F66 /* UIView+SDExtension.m in Sources */,
 				38AE5D941EA07D7900D7F558 /* SearchViewController.m in Sources */,
 				3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */,

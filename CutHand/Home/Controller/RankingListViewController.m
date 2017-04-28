@@ -38,6 +38,7 @@
     [super viewWillDisappear:animated];
     self.lineView.hidden = NO;
     [self.naviView removeFromSuperview];
+    [self.topBtnArray removeAllObjects];
 }
 
 - (void)buildNaviBar {
