@@ -33,7 +33,7 @@
     //获取导航栏下面黑线
     self.lineView = [self getLineViewInNavigationBar:self.navigationController.navigationBar];
     
-    if(self.navigationController.viewControllers.count>1) {
+    if(self.navigationController.viewControllers.count > 1 && ![[NSString stringWithUTF8String:object_getClassName(self)] isEqualToString:@"SearchViewController"]) {
         [self buildNaviBarLelfBtn];
     }
 }
