@@ -49,6 +49,8 @@
 		384121381EA4AFE500FB31B5 /* PersonalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121371EA4AFE500FB31B5 /* PersonalPageViewController.m */; };
 		384121451EA4B0BA00FB31B5 /* ADScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121421EA4B0BA00FB31B5 /* ADScrollContentView.m */; };
 		384121461EA4B0BA00FB31B5 /* ADScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121441EA4B0BA00FB31B5 /* ADScrollTitleView.m */; };
+		384158461EC2F06D00A88903 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 384158451EC2F06D00A88903 /* LoginButton.m */; };
+		3841584D1EC2FA6200A88903 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3841584C1EC2FA6200A88903 /* ProgressView.m */; };
 		386880081EAF24830006F87C /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386880071EAF24830006F87C /* EditViewController.m */; };
 		3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800A1EAF2BD90006F87C /* EditTableViewCell.m */; };
 		3868800E1EAF34050006F87C /* GenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800D1EAF34050006F87C /* GenderViewController.m */; };
@@ -64,6 +66,7 @@
 		38B806561EA7047700CD9E20 /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B806551EA7047700CD9E20 /* AnimationButton.m */; };
 		38B8065A1EA7050F00CD9E20 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */; };
 		38CEFAC21EC1B50000B1EC68 /* cutHand.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38CEFAC11EC1B50000B1EC68 /* cutHand.mp4 */; };
+		38CEFAC51EC1BFF700B1EC68 /* PhoneLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CEFAC41EC1BFF700B1EC68 /* PhoneLoginViewController.m */; };
 		38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1D7FD1EA5AC9600C16F3C /* RecordTableViewCell.m */; };
 		38F3D7D41EB3309A00C40DAF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F3D7D31EB3309A00C40DAF /* LoginViewController.m */; };
 		4BDDE589F5896DBB16885230 /* libPods-CutHand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F01AB644265261E964507C41 /* libPods-CutHand.a */; };
@@ -153,6 +156,10 @@
 		384121421EA4B0BA00FB31B5 /* ADScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScrollContentView.m; sourceTree = "<group>"; };
 		384121431EA4B0BA00FB31B5 /* ADScrollTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScrollTitleView.h; sourceTree = "<group>"; };
 		384121441EA4B0BA00FB31B5 /* ADScrollTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScrollTitleView.m; sourceTree = "<group>"; };
+		384158441EC2F06D00A88903 /* LoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButton.h; sourceTree = "<group>"; };
+		384158451EC2F06D00A88903 /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButton.m; sourceTree = "<group>"; };
+		3841584B1EC2FA6200A88903 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		3841584C1EC2FA6200A88903 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		386880061EAF24830006F87C /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		386880071EAF24830006F87C /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		386880091EAF2BD90006F87C /* EditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableViewCell.h; sourceTree = "<group>"; };
@@ -182,6 +189,8 @@
 		38B806581EA7050F00CD9E20 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
 		38B806591EA7050F00CD9E20 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		38CEFAC11EC1B50000B1EC68 /* cutHand.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutHand.mp4; sourceTree = "<group>"; };
+		38CEFAC31EC1BFF700B1EC68 /* PhoneLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneLoginViewController.h; sourceTree = "<group>"; };
+		38CEFAC41EC1BFF700B1EC68 /* PhoneLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneLoginViewController.m; sourceTree = "<group>"; };
 		38F1D7FC1EA5AC9600C16F3C /* RecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableViewCell.h; sourceTree = "<group>"; };
 		38F1D7FD1EA5AC9600C16F3C /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
 		38F3D7D21EB3309A00C40DAF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -348,6 +357,8 @@
 			children = (
 				38F3D7D21EB3309A00C40DAF /* LoginViewController.h */,
 				38F3D7D31EB3309A00C40DAF /* LoginViewController.m */,
+				38CEFAC31EC1BFF700B1EC68 /* PhoneLoginViewController.h */,
+				38CEFAC41EC1BFF700B1EC68 /* PhoneLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +373,7 @@
 		382DAD7D1E9F152A00202F66 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				384158381EC2EFE600A88903 /* LoginButton */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -657,6 +669,17 @@
 			path = ADScrollView;
 			sourceTree = "<group>";
 		};
+		384158381EC2EFE600A88903 /* LoginButton */ = {
+			isa = PBXGroup;
+			children = (
+				384158441EC2F06D00A88903 /* LoginButton.h */,
+				384158451EC2F06D00A88903 /* LoginButton.m */,
+				3841584B1EC2FA6200A88903 /* ProgressView.h */,
+				3841584C1EC2FA6200A88903 /* ProgressView.m */,
+			);
+			path = LoginButton;
+			sourceTree = "<group>";
+		};
 		386F9F511EB07B6800FCD950 /* BaseCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -869,11 +892,14 @@
 				38AE5D9D1EA0C7D400D7F558 /* CategoryTableViewCell.m in Sources */,
 				382DADE51E9F1B2F00202F66 /* NSMutableArray+MutableArrayCheck.m in Sources */,
 				386F9F611EB0A0CD00FCD950 /* iCarousel.m in Sources */,
+				3841584D1EC2FA6200A88903 /* ProgressView.m in Sources */,
 				38F3D7D41EB3309A00C40DAF /* LoginViewController.m in Sources */,
 				382DADC91E9F1B2000202F66 /* UIView+SDExtension.m in Sources */,
+				38CEFAC51EC1BFF700B1EC68 /* PhoneLoginViewController.m in Sources */,
 				38AE5D941EA07D7900D7F558 /* SearchViewController.m in Sources */,
 				3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */,
 				386F9F541EB07B8400FCD950 /* BaseTableCell.m in Sources */,
+				384158461EC2F06D00A88903 /* LoginButton.m in Sources */,
 				382DADA61E9F170900202F66 /* BaseViewController.m in Sources */,
 				382DAE151E9F29E500202F66 /* ADTabBar.m in Sources */,
 				38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */,
@@ -999,6 +1025,41 @@
 				INFOPLIST_FILE = CutHand/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDiPhoneVersion\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SDiPhoneVersion\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesar.CutHand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1014,6 +1075,41 @@
 				INFOPLIST_FILE = CutHand/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDiPhoneVersion\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SDiPhoneVersion\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesar.CutHand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

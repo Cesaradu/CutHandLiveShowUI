@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "MainTabBarController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "PhoneLoginViewController.h"
 
 @interface LoginViewController ()
 
@@ -27,11 +28,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];
+    [self.moviePlayerController play];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO];
+    [self.moviePlayerController pause];
 }
 
 - (void)viewDidLoad {
@@ -104,10 +107,12 @@
         self.logoImage.alpha = 1.0;
         self.slogen.alpha = 1.0;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:1 delay:0. usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.loginLabel.alpha = 1.0;
+        [UIView animateWithDuration:1  animations:^{
             self.wechatBtn.alpha = 1.0;
             self.phoneBtn.alpha = 1.0;
+        }];
+        [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.loginLabel.alpha = 1.0;
             self.wechatBtn.frame = CGRectMake(ScreenWidth/2-[self Suit:95], ScreenHeight-[self Suit:165], [self Suit:65], [self Suit:65]);
             self.phoneBtn.frame = CGRectMake(ScreenWidth/2+[self Suit:30], ScreenHeight-[self Suit:165], [self Suit:65], [self Suit:65]);
         } completion:nil];
@@ -147,8 +152,14 @@
 }
 
 - (void)clickPhoneBtn {
-    MainTabBarController *mainVC = [[MainTabBarController alloc] init];
-    [UIApplication sharedApplication].keyWindow.rootViewController = mainVC;
+//    MainTabBarController *mainVC = [[MainTabBarController alloc] init];
+//    [UIApplication sharedApplication].keyWindow.rootViewController = mainVC;
+    PhoneLoginViewController *phoneLoginVC = [[PhoneLoginViewController alloc] init];
+    [self.navigationController pushViewController:phoneLoginVC animated:YES];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
