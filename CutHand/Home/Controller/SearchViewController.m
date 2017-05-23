@@ -35,7 +35,7 @@
 }
 
 - (void)startSearchBarAnimation {
-    [UIView animateWithDuration:0.4 animations:^{
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
         self.searchBar.frame = CGRectMake([self Suit:15], 8, ScreenWidth-[self Suit:80], 28);
     } completion:^(BOOL finished) {
         self.searchBar.placeholder = @"输入用户名或剁手号";

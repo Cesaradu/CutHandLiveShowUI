@@ -51,9 +51,15 @@
 		384121461EA4B0BA00FB31B5 /* ADScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384121441EA4B0BA00FB31B5 /* ADScrollTitleView.m */; };
 		384158461EC2F06D00A88903 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 384158451EC2F06D00A88903 /* LoginButton.m */; };
 		3841584D1EC2FA6200A88903 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3841584C1EC2FA6200A88903 /* ProgressView.m */; };
+		384E5A8E1ECD6CD8004BA44D /* AnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5A881ECD6CD8004BA44D /* AnimationFactory.m */; };
+		384E5A8F1ECD6CD8004BA44D /* JelloAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5A8B1ECD6CD8004BA44D /* JelloAnimation.m */; };
+		384E5A901ECD6CD8004BA44D /* TabBarItemAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5A8D1ECD6CD8004BA44D /* TabBarItemAnimation.m */; };
+		384E5A951ECD6CFE004BA44D /* ADTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5A921ECD6CFE004BA44D /* ADTabBarItem.m */; };
+		384E5A961ECD6CFE004BA44D /* ADTabBarSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 384E5A941ECD6CFE004BA44D /* ADTabBarSource.m */; };
 		386880081EAF24830006F87C /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386880071EAF24830006F87C /* EditViewController.m */; };
 		3868800B1EAF2BD90006F87C /* EditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800A1EAF2BD90006F87C /* EditTableViewCell.m */; };
 		3868800E1EAF34050006F87C /* GenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868800D1EAF34050006F87C /* GenderViewController.m */; };
+		386A08DB1EC4065C00384530 /* CheckCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 386A08DA1EC4065C00384530 /* CheckCodeButton.m */; };
 		386F9F4A1EB071F300FCD950 /* AnchorLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F491EB071F300FCD950 /* AnchorLevelViewController.m */; };
 		386F9F541EB07B8400FCD950 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F531EB07B8400FCD950 /* BaseTableCell.m */; };
 		386F9F571EB07B9900FCD950 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F9F561EB07B9900FCD950 /* BaseCollectionCell.m */; };
@@ -160,12 +166,26 @@
 		384158451EC2F06D00A88903 /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButton.m; sourceTree = "<group>"; };
 		3841584B1EC2FA6200A88903 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
 		3841584C1EC2FA6200A88903 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		384E5A861ECD6CD8004BA44D /* ADTabBarAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTabBarAnimationProtocol.h; sourceTree = "<group>"; };
+		384E5A871ECD6CD8004BA44D /* AnimationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationFactory.h; sourceTree = "<group>"; };
+		384E5A881ECD6CD8004BA44D /* AnimationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationFactory.m; sourceTree = "<group>"; };
+		384E5A891ECD6CD8004BA44D /* AnimationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationType.h; sourceTree = "<group>"; };
+		384E5A8A1ECD6CD8004BA44D /* JelloAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JelloAnimation.h; sourceTree = "<group>"; };
+		384E5A8B1ECD6CD8004BA44D /* JelloAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JelloAnimation.m; sourceTree = "<group>"; };
+		384E5A8C1ECD6CD8004BA44D /* TabBarItemAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarItemAnimation.h; sourceTree = "<group>"; };
+		384E5A8D1ECD6CD8004BA44D /* TabBarItemAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarItemAnimation.m; sourceTree = "<group>"; };
+		384E5A911ECD6CFE004BA44D /* ADTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTabBarItem.h; sourceTree = "<group>"; };
+		384E5A921ECD6CFE004BA44D /* ADTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTabBarItem.m; sourceTree = "<group>"; };
+		384E5A931ECD6CFE004BA44D /* ADTabBarSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTabBarSource.h; sourceTree = "<group>"; };
+		384E5A941ECD6CFE004BA44D /* ADTabBarSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTabBarSource.m; sourceTree = "<group>"; };
 		386880061EAF24830006F87C /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		386880071EAF24830006F87C /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		386880091EAF2BD90006F87C /* EditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableViewCell.h; sourceTree = "<group>"; };
 		3868800A1EAF2BD90006F87C /* EditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableViewCell.m; sourceTree = "<group>"; };
 		3868800C1EAF34050006F87C /* GenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderViewController.h; sourceTree = "<group>"; };
 		3868800D1EAF34050006F87C /* GenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderViewController.m; sourceTree = "<group>"; };
+		386A08D91EC4065C00384530 /* CheckCodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckCodeButton.h; sourceTree = "<group>"; };
+		386A08DA1EC4065C00384530 /* CheckCodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckCodeButton.m; sourceTree = "<group>"; };
 		386F9F481EB071F300FCD950 /* AnchorLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorLevelViewController.h; sourceTree = "<group>"; };
 		386F9F491EB071F300FCD950 /* AnchorLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnchorLevelViewController.m; sourceTree = "<group>"; };
 		386F9F521EB07B8400FCD950 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
@@ -374,6 +394,8 @@
 			isa = PBXGroup;
 			children = (
 				384158381EC2EFE600A88903 /* LoginButton */,
+				386A08D91EC4065C00384530 /* CheckCodeButton.h */,
+				386A08DA1EC4065C00384530 /* CheckCodeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,12 +474,17 @@
 		382DADA31E9F16FC00202F66 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				384E5A851ECD6CD8004BA44D /* ADTabBarItemAnimation */,
 				382DADA41E9F170900202F66 /* BaseViewController.h */,
 				382DADA51E9F170900202F66 /* BaseViewController.m */,
 				382DADA71E9F172600202F66 /* MainTabBarController.h */,
 				382DADA81E9F172600202F66 /* MainTabBarController.m */,
 				382DAE131E9F29E500202F66 /* ADTabBar.h */,
 				382DAE141E9F29E500202F66 /* ADTabBar.m */,
+				384E5A911ECD6CFE004BA44D /* ADTabBarItem.h */,
+				384E5A921ECD6CFE004BA44D /* ADTabBarItem.m */,
+				384E5A931ECD6CFE004BA44D /* ADTabBarSource.h */,
+				384E5A941ECD6CFE004BA44D /* ADTabBarSource.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -680,6 +707,21 @@
 			path = LoginButton;
 			sourceTree = "<group>";
 		};
+		384E5A851ECD6CD8004BA44D /* ADTabBarItemAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				384E5A861ECD6CD8004BA44D /* ADTabBarAnimationProtocol.h */,
+				384E5A871ECD6CD8004BA44D /* AnimationFactory.h */,
+				384E5A881ECD6CD8004BA44D /* AnimationFactory.m */,
+				384E5A891ECD6CD8004BA44D /* AnimationType.h */,
+				384E5A8A1ECD6CD8004BA44D /* JelloAnimation.h */,
+				384E5A8B1ECD6CD8004BA44D /* JelloAnimation.m */,
+				384E5A8C1ECD6CD8004BA44D /* TabBarItemAnimation.h */,
+				384E5A8D1ECD6CD8004BA44D /* TabBarItemAnimation.m */,
+			);
+			path = ADTabBarItemAnimation;
+			sourceTree = "<group>";
+		};
 		386F9F511EB07B6800FCD950 /* BaseCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -865,12 +907,14 @@
 				382DADEB1E9F1B2F00202F66 /* UUID.m in Sources */,
 				382DAD9B1E9F164500202F66 /* AppDelegate.m in Sources */,
 				382DAE051E9F1B5600202F66 /* UIButton+Extension.m in Sources */,
+				384E5A8F1ECD6CD8004BA44D /* JelloAnimation.m in Sources */,
 				382DAE211E9F563800202F66 /* HomeTableViewController.m in Sources */,
 				384121381EA4AFE500FB31B5 /* PersonalPageViewController.m in Sources */,
 				3868800E1EAF34050006F87C /* GenderViewController.m in Sources */,
 				386F9F4A1EB071F300FCD950 /* AnchorLevelViewController.m in Sources */,
 				3817554E1EB30EEB0085D2CA /* LevelView.m in Sources */,
 				382DAE181E9F2BDF00202F66 /* LiveViewController.m in Sources */,
+				386A08DB1EC4065C00384530 /* CheckCodeButton.m in Sources */,
 				384121451EA4B0BA00FB31B5 /* ADScrollContentView.m in Sources */,
 				382DADE81E9F1B2F00202F66 /* KeyChain.m in Sources */,
 				382DAE041E9F1B5600202F66 /* NSString+Extension.m in Sources */,
@@ -890,6 +934,7 @@
 				382DADC31E9F1B2000202F66 /* TAAbstractDotView.m in Sources */,
 				382DADC41E9F1B2000202F66 /* TAAnimatedDotView.m in Sources */,
 				38AE5D9D1EA0C7D400D7F558 /* CategoryTableViewCell.m in Sources */,
+				384E5A961ECD6CFE004BA44D /* ADTabBarSource.m in Sources */,
 				382DADE51E9F1B2F00202F66 /* NSMutableArray+MutableArrayCheck.m in Sources */,
 				386F9F611EB0A0CD00FCD950 /* iCarousel.m in Sources */,
 				3841584D1EC2FA6200A88903 /* ProgressView.m in Sources */,
@@ -903,9 +948,11 @@
 				382DADA61E9F170900202F66 /* BaseViewController.m in Sources */,
 				382DAE151E9F29E500202F66 /* ADTabBar.m in Sources */,
 				38F1D7FE1EA5AC9600C16F3C /* RecordTableViewCell.m in Sources */,
+				384E5A8E1ECD6CD8004BA44D /* AnimationFactory.m in Sources */,
 				382DADC61E9F1B2000202F66 /* TAPageControl.m in Sources */,
 				38AE5D971EA07DA800D7F558 /* RankingListViewController.m in Sources */,
 				381755511EB315F00085D2CA /* LevelCell.m in Sources */,
+				384E5A951ECD6CFE004BA44D /* ADTabBarItem.m in Sources */,
 				382DADA91E9F172600202F66 /* MainTabBarController.m in Sources */,
 				382DADEA1E9F1B2F00202F66 /* BaseRequest.m in Sources */,
 				382DAD841E9F15B900202F66 /* main.m in Sources */,
@@ -915,6 +962,7 @@
 				382DADE91E9F1B2F00202F66 /* ModelData.m in Sources */,
 				382DADC81E9F1B2000202F66 /* SDCycleScrollView.m in Sources */,
 				382AC9EB1EA46CDD00378AB7 /* RankTableViewCell.m in Sources */,
+				384E5A901ECD6CD8004BA44D /* TabBarItemAnimation.m in Sources */,
 				382DADE41E9F1B2F00202F66 /* NSArray+ArrayCheck.m in Sources */,
 				382DAE0D1E9F1E2600202F66 /* HomeViewController.m in Sources */,
 			);

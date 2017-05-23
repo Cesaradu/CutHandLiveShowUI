@@ -24,7 +24,7 @@
 }
 
 - (void)initSetting {
-    scale = 1.2;
+    scale = 1.1;
     bgView = [[UIView alloc]initWithFrame:self.bounds];
     bgView.backgroundColor = [UIColor colorWithHexString:@"c0c0c0" alpha:1.0];
     bgView.userInteractionEnabled = NO;

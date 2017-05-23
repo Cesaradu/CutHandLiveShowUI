@@ -23,6 +23,9 @@
     //再来调35个按钮的位置
     [super layoutSubviews];
     
+    //选中item
+    self.seleItem = (ADTabBarItem *)self.selectedItem;
+    
     //1.设置中间按钮的位置
     CGPoint center = CGPointMake(self.bounds.size.width*0.5, self.bounds.size.height*0.5);
     self.centerBtn.center = center;

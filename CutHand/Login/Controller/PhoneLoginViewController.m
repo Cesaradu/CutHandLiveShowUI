@@ -8,6 +8,8 @@
 
 #import "PhoneLoginViewController.h"
 #import "LoginButton.h"
+#import "CheckCodeButton.h"
+#import "MainTabBarController.h"
 
 #define time60 60
 
@@ -19,11 +21,9 @@
 @property (nonatomic, strong) UIView *checkCodeView;
 @property (nonatomic, strong) UIImageView *checkCodeImage;
 @property (nonatomic, strong) UITextField *checkCodeTextField;
-@property (nonatomic, strong) UIButton *checkCodeBtn;
-@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) CheckCodeButton *checkCodeBtn;
 @property (nonatomic, strong) LoginButton *loginBtn;
-@property (nonatomic, strong) NSTimer *timer;//倒计时
-@property (nonatomic, assign) int second;//秒数
+
 
 @end
 
@@ -31,9 +31,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.timer invalidate];
-    self.timer = nil;
-
+    [self.checkCodeBtn destroyTimer];
 }
 
 - (void)viewDidLoad {
@@ -152,26 +150,12 @@
     }];
     
     //获取验证码
-    self.checkCodeBtn = [UIButton buttonWithTitle:@"获取验证码" AndTitleColor:@"ffffff" AndTitleFont:[self SuitFont:10] AndBackgroundColor:MainColor addTarget:self action:@selector(clickCheckCodeBtn)];
+    self.checkCodeBtn = [[CheckCodeButton alloc] initWithFrame:CGRectMake([self Suit:395/2], [self Suit:15/2], [self Suit:125/2], [self Suit:25])];
+    self.checkCodeBtn.titleLabel.font = [UIFont systemFontOfSize:[self SuitFont:11]];
+    self.checkCodeBtn.timeLabel.font = [UIFont systemFontOfSize:[self SuitFont:11]];
+    self.checkCodeBtn.backgroundColor = [UIColor colorWithHexString:MainColor alpha:1.0];
+    [self.checkCodeBtn addTarget:self action:@selector(clickCheckCodeBtn) forControlEvents:UIControlEventTouchUpInside];
     [self.checkCodeView addSubview:self.checkCodeBtn];
-    [self.checkCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.checkCodeView.mas_centerY);
-        make.right.equalTo(self.checkCodeView.mas_right);
-        make.height.mas_equalTo([self Suit:25]);
-        make.width.mas_equalTo([self Suit:125/2]);
-    }];
-    
-    //倒计时
-    self.timeLabel = [UILabel labelWithColor:@"ffffff" AndFont:[self SuitFont:10] AndAlignment:NSTextAlignmentCenter];
-    self.timeLabel.backgroundColor = [UIColor colorWithHexString:@"C0C0C0" alpha:1.0];
-    self.timeLabel.hidden = YES;
-    [self.checkCodeBtn addSubview:self.timeLabel];
-    [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.checkCodeBtn.mas_top);
-        make.bottom.equalTo(self.checkCodeBtn.mas_bottom);
-        make.left.equalTo(self.checkCodeBtn.mas_left);
-        make.right.equalTo(self.checkCodeBtn.mas_right);
-    }];
     
     //登录按钮
     self.loginBtn = [[LoginButton alloc] initWithFrame:CGRectMake(ScreenWidth/2-[self Suit:605/4], [self Suit:280], [self Suit:605/2], [self Suit:48])];
@@ -237,7 +221,18 @@
 - (void)clickLoginBtn {
     [self.loginBtn startAnimation];
     self.loginBtn.userInteractionEnabled = NO;
-    [self performSelector:@selector(stop) withObject:self afterDelay:3];
+    [self performSelector:@selector(goToMainVC) withObject:self afterDelay:2];
+    
+//    [self performSelector:@selector(stop) withObject:self afterDelay:3];
+}
+
+- (void)goToMainVC {
+    MainTabBarController *mainVC = [[MainTabBarController alloc] init];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    [UIView transitionFromView:window.rootViewController.view toView:mainVC.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve completion:^(BOOL finished) {
+        window.rootViewController = mainVC;
+    }];
 }
 
 - (void)stop {
@@ -246,59 +241,19 @@
 }
 
 - (void)clickCheckCodeBtn {
-    [self decreaseTime];
+    self.checkCodeBtn.second = time60;
+    [self.checkCodeBtn startDecreaseTime];
 }
 
--(void)decreaseTime
-{
-    [self.checkCodeBtn setTitle:@"" forState:UIControlStateNormal];
-    self.checkCodeBtn.enabled = NO;
-    self.second = time60;
-    self.timeLabel.hidden = NO;
-    self.timeLabel.text = [NSString stringWithFormat:@"%is",self.second];
-    
-    if(self.timer == nil) {
-        [self initTimer];
-    } else {
-        [self startTimer];
-    }
-}
 
 - (void)clickProtocolBtn {
-    
+    NSLog(@"协议");
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
 
-//若为空初始化计时器
-- (void)initTimer {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDown:) userInfo:nil repeats:YES];
-}
-
-- (void)countDown:(NSTimer *)timer {
-    if(self.second > 0) {
-        self.second--;
-        self.timeLabel.text= [NSString stringWithFormat:@"%is",self.second];
-    } else {
-        [self stopTimer];
-        self.timeLabel.hidden=YES;
-        [self.checkCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
-        self.checkCodeBtn.enabled=YES;
-    }
-
-}
-
-//开启计时器
-- (void)startTimer {
-    [self.timer setFireDate:[NSDate distantPast]];
-}
-
-//暂停计时器
-- (void)stopTimer {
-    [self.timer setFireDate:[NSDate distantFuture]];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
